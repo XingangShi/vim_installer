@@ -60,7 +60,6 @@ Plugin 'mhartington/oceanic-next'
 Plugin 'yuttie/hydrangea-vim'
 Plugin 'liuchengxu/space-vim-theme'
 
-
 " 开启 YouCompleteMe 安装，去掉下面一行的注释
 Plugin 'Valloric/YouCompleteMe' "YouCompleteMe requires Vim 7.4.1578+, python3
 
@@ -138,7 +137,7 @@ let g:airline_statusline_ontop=0
 " Add the following snippet to your vimrc or put it into (Neo)Vim's plugin dir
 " to grep interactively in the current work dir.
 " Open the topmost file in (Neo)Vim by hitting <F2>.
-
+"
 " Requires [ugrep](https://github.com/Genivia/ugrep), a drop-in alternative to grep
 " similar to ripgrep.
 
@@ -303,9 +302,6 @@ endif
 "自动加载~/tags下的文件
 execute "set tags+=" . system("ls -l ~/tags/ | grep -v ^total | awk 'BEGIN{a=\"\"}{if (a != \"\") a = a \",\"; a=a \"~/tags/\" $NF} END{print a}'")
 
-" https://agentzh.org/misc/.vimrc
-
-
 "自动补全配置
 " As-you-type autocomplete
 "set completeopt=longest,menu "让Vim的补全菜单行为与一般IDE一致(参考VimTip1228)
@@ -456,7 +452,6 @@ filetype plugin indent on
 nmap <C-m> <Cmd>CocCommand explorer<CR>
 
 hi CocMenuSel guifg=#cccccc guibg=#2a3d75
-
 
 if has("termguicolors")
     " enable true color
